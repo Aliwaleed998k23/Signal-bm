@@ -1,0 +1,16 @@
+{
+  "name": "biquote-signal-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "يفحص عدة أزواج بالخلفية عبر GitHub Actions ويرسل صور صفقات جديدة تلقائياً لتيليجرام، حتى لو تطبيق المتصفح مسكر.",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node signal-bot.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.53"
+  }
+}
