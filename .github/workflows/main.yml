@@ -1,0 +1,43 @@
+name: Signal Scan
+
+on:
+  schedule:
+    # كل 5 دقائق — عدّل الرقم إذا تريد فترة مختلفة (لا تقل عن 5 دقائق لتجنب حدود GitHub)
+    - cron: '*/5 * * * *'
+  workflow_dispatch: {}   # يسمح بتشغيل يدوي من تبويب Actions للاختبار
+
+permissions:
+  contents: write   # يلزم لحفظ (commit) ملف state.json المحدّث
+
+concurrency:
+  group: signal-scan
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Run signal bot
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: node signal-bot.js
+
+      - name: Commit updated state
+        run: |
+          git config user.name "signal-bot"
+          git config user.email "signal-bot@users.noreply.github.com"
+          git add state.json
+          git diff --cached --quiet || git commit -m "chore: update signal state [skip ci]"
+          git push
