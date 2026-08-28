@@ -2,12 +2,11 @@ name: Signal Scan
 
 on:
   schedule:
-    # كل 5 دقائق — عدّل الرقم إذا تريد فترة مختلفة (لا تقل عن 5 دقائق لتجنب حدود GitHub)
     - cron: '*/5 * * * *'
-  workflow_dispatch: {}   # يسمح بتشغيل يدوي من تبويب Actions للاختبار
+  workflow_dispatch: {}
 
 permissions:
-  contents: write   # يلزم لحفظ (commit) ملف state.json المحدّث
+  contents: write
 
 concurrency:
   group: signal-scan
@@ -23,7 +22,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
 
       - name: Install dependencies
         run: npm install --no-audit --no-fund
@@ -40,4 +39,5 @@ jobs:
           git config user.email "signal-bot@users.noreply.github.com"
           git add state.json
           git diff --cached --quiet || git commit -m "chore: update signal state [skip ci]"
+          git pull --rebase origin main
           git push
