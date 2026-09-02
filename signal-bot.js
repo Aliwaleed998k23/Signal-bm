@@ -322,14 +322,9 @@ const ICT = {
     const equilibrium = low + range * 0.5;
     const price = bars[bars.length - 1].close;
     const zone = price < equilibrium ? 'DISCOUNT' : (price > equilibrium ? 'PREMIUM' : 'EQUILIBRIUM');
-    // Strong OTE (62%-79% retracement) — the classic ICT sweet spot.
     const oteZone = legDir === 1 ? [low + range * 0.21, low + range * 0.382] : [low + range * 0.618, low + range * 0.79];
     const inOTE = price >= oteZone[0] && price <= oteZone[1];
-    // Weaker early-entry zone (50%-62% retracement) — equilibrium out to the
-    // start of OTE. Valid confluence, just a shallower/less-confirmed pullback.
-    const earlyZone = legDir === 1 ? [low + range * 0.382, low + range * 0.5] : [low + range * 0.5, low + range * 0.618];
-    const inEarlyZone = price >= earlyZone[0] && price <= earlyZone[1];
-    return { low, high, equilibrium, zone, oteZone, inOTE, earlyZone, inEarlyZone, legDir };
+    return { low, high, equilibrium, zone, oteZone, inOTE, legDir };
   },
 
   analyze(bars, cfg) {
@@ -354,8 +349,7 @@ const ICT = {
         if (STRATEGY.requireLiquiditySweep) reasons.push('سحب سيولة (Liquidity Sweep) قبل الكسر');
         if (STRATEGY.requireDisplacement) reasons.push('شمعة اندفاع (Displacement) تؤكد الكسر');
         if (STRATEGY.requireRejectionCandle) reasons.push('شمعة رفض/تأكيد صاعدة عند المنطقة');
-        if (pd.inOTE) { score += 25; reasons.push('السعر داخل منطقة OTE القوية (61.8%-79%)'); }
-        else if (pd.inEarlyZone) { score += 12; reasons.push('السعر داخل منطقة دخول أولى أضعف (50%-61.8%)'); }
+        if (pd.inOTE) { score += 25; reasons.push('السعر داخل منطقة OTE (61.8%-79%)'); }
         if (fvgs.find(g => g.type === 'BULLISH' && price >= g.bottom && price <= g.top)) { score += 25; reasons.push('السعر داخل Fair Value Gap صاعد غير ممتلئ'); }
         if (ob.bullishOB && !ob.bullishOB.mitigated && price <= ob.bullishOB.high) { score += 20; reasons.push('قرب Order Block صاعد غير مُختبر'); }
       }
@@ -368,8 +362,7 @@ const ICT = {
         if (STRATEGY.requireLiquiditySweep) reasons.push('سحب سيولة (Liquidity Sweep) قبل الكسر');
         if (STRATEGY.requireDisplacement) reasons.push('شمعة اندفاع (Displacement) تؤكد الكسر');
         if (STRATEGY.requireRejectionCandle) reasons.push('شمعة رفض/تأكيد هابطة عند المنطقة');
-        if (pd.inOTE) { score += 25; reasons.push('السعر داخل منطقة OTE القوية (61.8%-79%)'); }
-        else if (pd.inEarlyZone) { score += 12; reasons.push('السعر داخل منطقة دخول أولى أضعف (50%-61.8%)'); }
+        if (pd.inOTE) { score += 25; reasons.push('السعر داخل منطقة OTE (61.8%-79%)'); }
         if (fvgs.find(g => g.type === 'BEARISH' && price <= g.top && price >= g.bottom)) { score += 25; reasons.push('السعر داخل Fair Value Gap هابط غير ممتلئ'); }
         if (ob.bearishOB && !ob.bearishOB.mitigated && price >= ob.bearishOB.low) { score += 20; reasons.push('قرب Order Block هابط غير مُختبر'); }
       }
