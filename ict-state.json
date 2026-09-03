@@ -1,5 +1,85 @@
 [
   {
+    "fingerprint": "XAG/USD|15m|-1|2026-09-03T08:00:00Z|ICT",
+    "date": "2026-09-03T08:14:15.963Z",
+    "pair": "XAG/USD",
+    "timeframe": "15M",
+    "timeframeKey": "15m",
+    "candleTime": "2026-09-03T08:00:00Z",
+    "direction": "SELL",
+    "score": 55,
+    "reasons": [
+      "هيكل هابط (Bias/BOS هابط)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 65.9905,
+    "sl": 66.17856934100858,
+    "tp": 65.63616666666667,
+    "rr": 1.8840568666487432,
+    "source": "ICT",
+    "createdAt": 1788423255963
+  },
+  {
+    "fingerprint": "XAG/USD|1m|1|2026-09-03T08:14:00Z|ICT",
+    "date": "2026-09-03T08:14:15.935Z",
+    "pair": "XAG/USD",
+    "timeframe": "1M",
+    "timeframeKey": "1m",
+    "candleTime": "2026-09-03T08:14:00Z",
+    "direction": "BUY",
+    "score": 55,
+    "reasons": [
+      "هيكل صاعد (Bias/BOS صاعد)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 65.9845,
+    "sl": 65.87031521295758,
+    "tp": 66.21286957408483,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1788423255935
+  },
+  {
+    "fingerprint": "XAU/USD|1m|1|2026-09-03T08:14:00Z|ICT",
+    "date": "2026-09-03T08:14:15.688Z",
+    "pair": "XAU/USD",
+    "timeframe": "1M",
+    "timeframeKey": "1m",
+    "candleTime": "2026-09-03T08:14:00Z",
+    "direction": "BUY",
+    "score": 55,
+    "reasons": [
+      "هيكل صاعد (Bias/BOS صاعد)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 4433.111,
+    "sl": 4427.450321249419,
+    "tp": 4444.432357501161,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1788423255688
+  },
+  {
+    "fingerprint": "EUR/USD|15m|1|2026-09-03T08:00:00Z|ICT",
+    "date": "2026-09-03T08:14:15.688Z",
+    "pair": "EUR/USD",
+    "timeframe": "15M",
+    "timeframeKey": "15m",
+    "candleTime": "2026-09-03T08:00:00Z",
+    "direction": "BUY",
+    "score": 55,
+    "reasons": [
+      "هيكل صاعد (Bias/BOS صاعد)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 1.16006,
+    "sl": 1.1595228946539724,
+    "tp": 1.1611342106920555,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1788423255688
+  },
+  {
     "fingerprint": "XAG/USD|15m|-1|2026-09-03T07:45:00Z|ICT",
     "date": "2026-09-03T07:57:17.363Z",
     "pair": "XAG/USD",
