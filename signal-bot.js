@@ -55,30 +55,6 @@ const MTF_LABELS = { '1m': '1M', '5m': '5M', '15m': '15M', '1h': '1H' };
 // Matches getCfg()'s defaults in analyzer.html when no UI overrides are set.
 const CFG = { atrPeriod: 14, maSlow: 21 };
 
-// "Professional ICT trader" behavior gates — see the message accompanying
-// this change for what each one does and why. All are tunable here if the
-// signal rate turns out too strict or too loose in practice.
-const STRATEGY = {
-  requireLiquiditySweep: true,   // stop-hunt beyond a prior swing before the break
-  requireDisplacement: true,     // the breakout candle must be a real impulse, not a grind
-  requireRejectionCandle: true,  // the current candle must show a wick-rejection inside the zone
-  useKillZones: true,            // only fire during London/NY session windows (UTC)
-  displacementAtrMult: 0.8,      // breakout candle body >= ATR * this
-  rejectionWickMult: 1.2,        // rejection wick >= body * this
-  sweepLookback: 20              // bars scanned backward for a swept swing point
-};
-
-// London Killzone 07:00-10:00 UTC, New York Killzone 12:00-15:00 UTC.
-// XAU/BTC trade outside these hours too, but this applies the same
-// session-based filter uniformly across all 8 pairs per the current
-// strategy choice — loosen/remove if it turns out too restrictive for
-// the metals/crypto pairs specifically.
-function inKillZone(date) {
-  date = date || new Date();
-  const h = date.getUTCHours();
-  return (h >= 7 && h < 10) || (h >= 12 && h < 15);
-}
-
 const STATE_FILE = path.join(__dirname, 'ict-state.json');
 const MAX_ICT_HISTORY = 500;
 
@@ -257,61 +233,6 @@ const ICT = {
     return { buySide, sellSide };
   },
 
-  // Was there a genuine stop-hunt before this structural break? Bullish
-  // setups (direction=1) need sell-side liquidity swept — a bar wicking
-  // below a prior swing low and a later close reclaiming above it.
-  // Bearish setups mirror this off swing highs.
-  liquiditySwept(bars, piv, direction, lookback) {
-    lookback = lookback || 20;
-    const start = Math.max(0, bars.length - lookback);
-    if (direction === 1) {
-      for (let i = start; i < bars.length; i++) {
-        const priorLows = piv.lows.filter(l => l.idx < i);
-        if (!priorLows.length) continue;
-        const refLow = priorLows[priorLows.length - 1].price;
-        if (bars[i].low < refLow) {
-          for (let j = i; j < bars.length; j++) {
-            if (bars[j].close > refLow) return true;
-          }
-        }
-      }
-      return false;
-    }
-    for (let i = start; i < bars.length; i++) {
-      const priorHighs = piv.highs.filter(h => h.idx < i);
-      if (!priorHighs.length) continue;
-      const refHigh = priorHighs[priorHighs.length - 1].price;
-      if (bars[i].high > refHigh) {
-        for (let j = i; j < bars.length; j++) {
-          if (bars[j].close < refHigh) return true;
-        }
-      }
-    }
-    return false;
-  },
-
-  // Was the breakout candle a real impulsive move (institutional intent),
-  // not a weak grind-through? Body must clear a meaningful fraction of ATR.
-  hasDisplacement(bars, atrNow, mult) {
-    if (!atrNow) return false;
-    const b = bars[bars.length - 1];
-    const body = Math.abs(b.close - b.open);
-    return body >= atrNow * (mult == null ? 0.8 : mult);
-  },
-
-  // Did the current candle actually reject the zone (long wick against the
-  // setup direction, close back toward continuation) rather than just
-  // closing inside the zone numerically with no real rejection?
-  hasRejectionCandle(bars, direction, mult) {
-    mult = mult == null ? 1.2 : mult;
-    const b = bars[bars.length - 1];
-    const body = Math.abs(b.close - b.open);
-    const lowerWick = Math.min(b.open, b.close) - b.low;
-    const upperWick = b.high - Math.max(b.open, b.close);
-    if (direction === 1) return lowerWick >= body * mult && b.close > (b.high + b.low) / 2;
-    return upperWick >= body * mult && b.close < (b.high + b.low) / 2;
-  },
-
   premiumDiscount(bars, struct) {
     if (!struct.lastHigh || !struct.lastLow) return null;
     const legDir = struct.lastHigh.idx > struct.lastLow.idx ? 1 : -1;
@@ -341,31 +262,15 @@ const ICT = {
 
     let direction = 0, score = 0; const reasons = [];
     if (struct.trend === 1 && pd && pd.zone === 'DISCOUNT') {
-      const sweepOk = !STRATEGY.requireLiquiditySweep || this.liquiditySwept(bars, piv, 1, STRATEGY.sweepLookback);
-      const dispOk = !STRATEGY.requireDisplacement || this.hasDisplacement(bars, atrNow, STRATEGY.displacementAtrMult);
-      const rejOk = !STRATEGY.requireRejectionCandle || this.hasRejectionCandle(bars, 1, STRATEGY.rejectionWickMult);
-      if (sweepOk && dispOk && rejOk) {
-        direction = 1; score += 30; reasons.push('هيكل صاعد (Bias/BOS صاعد)');
-        if (STRATEGY.requireLiquiditySweep) reasons.push('سحب سيولة (Liquidity Sweep) قبل الكسر');
-        if (STRATEGY.requireDisplacement) reasons.push('شمعة اندفاع (Displacement) تؤكد الكسر');
-        if (STRATEGY.requireRejectionCandle) reasons.push('شمعة رفض/تأكيد صاعدة عند المنطقة');
-        if (pd.inOTE) { score += 25; reasons.push('السعر داخل منطقة OTE (61.8%-79%)'); }
-        if (fvgs.find(g => g.type === 'BULLISH' && price >= g.bottom && price <= g.top)) { score += 25; reasons.push('السعر داخل Fair Value Gap صاعد غير ممتلئ'); }
-        if (ob.bullishOB && !ob.bullishOB.mitigated && price <= ob.bullishOB.high) { score += 20; reasons.push('قرب Order Block صاعد غير مُختبر'); }
-      }
+      direction = 1; score += 30; reasons.push('هيكل صاعد (Bias/BOS صاعد)');
+      if (pd.inOTE) { score += 25; reasons.push('السعر داخل منطقة OTE (61.8%-79%)'); }
+      if (fvgs.find(g => g.type === 'BULLISH' && price >= g.bottom && price <= g.top)) { score += 25; reasons.push('السعر داخل Fair Value Gap صاعد غير ممتلئ'); }
+      if (ob.bullishOB && !ob.bullishOB.mitigated && price <= ob.bullishOB.high) { score += 20; reasons.push('قرب Order Block صاعد غير مُختبر'); }
     } else if (struct.trend === -1 && pd && pd.zone === 'PREMIUM') {
-      const sweepOk = !STRATEGY.requireLiquiditySweep || this.liquiditySwept(bars, piv, -1, STRATEGY.sweepLookback);
-      const dispOk = !STRATEGY.requireDisplacement || this.hasDisplacement(bars, atrNow, STRATEGY.displacementAtrMult);
-      const rejOk = !STRATEGY.requireRejectionCandle || this.hasRejectionCandle(bars, -1, STRATEGY.rejectionWickMult);
-      if (sweepOk && dispOk && rejOk) {
-        direction = -1; score += 30; reasons.push('هيكل هابط (Bias/BOS هابط)');
-        if (STRATEGY.requireLiquiditySweep) reasons.push('سحب سيولة (Liquidity Sweep) قبل الكسر');
-        if (STRATEGY.requireDisplacement) reasons.push('شمعة اندفاع (Displacement) تؤكد الكسر');
-        if (STRATEGY.requireRejectionCandle) reasons.push('شمعة رفض/تأكيد هابطة عند المنطقة');
-        if (pd.inOTE) { score += 25; reasons.push('السعر داخل منطقة OTE (61.8%-79%)'); }
-        if (fvgs.find(g => g.type === 'BEARISH' && price <= g.top && price >= g.bottom)) { score += 25; reasons.push('السعر داخل Fair Value Gap هابط غير ممتلئ'); }
-        if (ob.bearishOB && !ob.bearishOB.mitigated && price >= ob.bearishOB.low) { score += 20; reasons.push('قرب Order Block هابط غير مُختبر'); }
-      }
+      direction = -1; score += 30; reasons.push('هيكل هابط (Bias/BOS هابط)');
+      if (pd.inOTE) { score += 25; reasons.push('السعر داخل منطقة OTE (61.8%-79%)'); }
+      if (fvgs.find(g => g.type === 'BEARISH' && price <= g.top && price >= g.bottom)) { score += 25; reasons.push('السعر داخل Fair Value Gap هابط غير ممتلئ'); }
+      if (ob.bearishOB && !ob.bearishOB.mitigated && price >= ob.bearishOB.low) { score += 20; reasons.push('قرب Order Block هابط غير مُختبر'); }
     }
 
     let plan = null;
@@ -376,27 +281,17 @@ const ICT = {
         : (ob.bearishOB ? ob.bearishOB.high + atrNow * 0.2 : entry + atrNow * 1.5);
       const risk = Math.abs(entry - sl);
       if (risk > 0) {
-        // Draw on Liquidity: prefer a pool OUTSIDE the current dealing range
-        // (beyond the last swing high/low) — that's the real external target
-        // a professional reads price as being "drawn to". Fall back to the
-        // nearest internal cluster, then to a measured-move 2R.
         let tp, rr;
         if (direction === 1) {
-          const external = liq.buySide.filter(z => z.avg > entry && (!struct.lastHigh || z.avg >= struct.lastHigh.price)).sort((a, b) => a.avg - b.avg)[0];
-          const internal = liq.buySide.filter(z => z.avg > entry).sort((a, b) => a.avg - b.avg)[0];
-          const targetLiq = external || internal;
+          const targetLiq = liq.buySide.filter(z => z.avg > entry).sort((a, b) => a.avg - b.avg)[0];
           tp = targetLiq ? targetLiq.avg : entry + risk * 2;
           rr = Math.abs(tp - entry) / risk;
           if (rr < 1.2) { tp = entry + risk * 2; rr = 2; }
-          else if (targetLiq) reasons.push(external ? 'الهدف عند مجمع سيولة خارجي (Draw on Liquidity)' : 'الهدف عند أقرب مجمع سيولة داخلي');
         } else {
-          const external = liq.sellSide.filter(z => z.avg < entry && (!struct.lastLow || z.avg <= struct.lastLow.price)).sort((a, b) => b.avg - a.avg)[0];
-          const internal = liq.sellSide.filter(z => z.avg < entry).sort((a, b) => b.avg - a.avg)[0];
-          const targetLiq = external || internal;
+          const targetLiq = liq.sellSide.filter(z => z.avg < entry).sort((a, b) => b.avg - a.avg)[0];
           tp = targetLiq ? targetLiq.avg : entry - risk * 2;
           rr = Math.abs(tp - entry) / risk;
           if (rr < 1.2) { tp = entry - risk * 2; rr = 2; }
-          else if (targetLiq) reasons.push(external ? 'الهدف عند مجمع سيولة خارجي (Draw on Liquidity)' : 'الهدف عند أقرب مجمع سيولة داخلي');
         }
         plan = { entry, sl, tp, rr, direction };
       }
@@ -469,8 +364,6 @@ async function scanPair(pairStr, history) {
   const [base, quote] = pairStr.split('/');
   const symbol = base + quote;
   const newSignals = [];
-
-  if (STRATEGY.useKillZones && !inKillZone()) return newSignals; // outside London/NY killzone — skip this pair entirely this run
 
   await Promise.all(MTF_LIST.map(async (tf) => {
     let bars;
