@@ -1,5 +1,25 @@
 [
   {
+    "fingerprint": "BTC/USD|15m|-1|2026-09-04T16:00:00Z|ICT",
+    "date": "2026-09-04T16:07:49.783Z",
+    "pair": "BTC/USD",
+    "timeframe": "15M",
+    "timeframeKey": "15m",
+    "candleTime": "2026-09-04T16:00:00Z",
+    "direction": "SELL",
+    "score": 55,
+    "reasons": [
+      "هيكل هابط (Bias/BOS هابط)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 79469.35,
+    "sl": 79640.01213405724,
+    "tp": 79128.02573188554,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1788538069783
+  },
+  {
     "fingerprint": "BTC/USD|15m|-1|2026-09-04T15:45:00Z|ICT",
     "date": "2026-09-04T15:54:07.317Z",
     "pair": "BTC/USD",
