@@ -1,5 +1,25 @@
 [
   {
+    "fingerprint": "XAG/USD|1m|1|2026-09-04T13:58:00Z|ICT",
+    "date": "2026-09-04T13:58:50.115Z",
+    "pair": "XAG/USD",
+    "timeframe": "1M",
+    "timeframeKey": "1m",
+    "candleTime": "2026-09-04T13:58:00Z",
+    "direction": "BUY",
+    "score": 55,
+    "reasons": [
+      "هيكل صاعد (Bias/BOS صاعد)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 65.6575,
+    "sl": 65.6768767690796,
+    "tp": 65.6962535381592,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1788530330115
+  },
+  {
     "fingerprint": "GBP/USD|15m|-1|2026-09-04T13:45:00Z|ICT",
     "date": "2026-09-04T13:49:04.291Z",
     "pair": "GBP/USD",
