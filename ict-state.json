@@ -1,5 +1,45 @@
 [
   {
+    "fingerprint": "XAG/USD|5m|-1|2026-09-04T17:25:00Z|ICT",
+    "date": "2026-09-04T17:26:11.594Z",
+    "pair": "XAG/USD",
+    "timeframe": "5M",
+    "timeframeKey": "5m",
+    "candleTime": "2026-09-04T17:25:00Z",
+    "direction": "SELL",
+    "score": 55,
+    "reasons": [
+      "هيكل هابط (Bias/BOS هابط)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 66.1155,
+    "sl": 66.2241614832829,
+    "tp": 65.8981770334342,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1788542771594
+  },
+  {
+    "fingerprint": "USD/TRY|15m|-1|2026-09-04T17:15:00Z|ICT",
+    "date": "2026-09-04T17:26:11.290Z",
+    "pair": "USD/TRY",
+    "timeframe": "15M",
+    "timeframeKey": "15m",
+    "candleTime": "2026-09-04T17:15:00Z",
+    "direction": "SELL",
+    "score": 55,
+    "reasons": [
+      "هيكل هابط (Bias/BOS هابط)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 48.44101,
+    "sl": 48.44232272201062,
+    "tp": 48.43838455597875,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1788542771290
+  },
+  {
     "fingerprint": "USD/TRY|15m|-1|2026-09-04T17:00:00Z|ICT",
     "date": "2026-09-04T17:13:57.251Z",
     "pair": "USD/TRY",
