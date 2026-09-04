@@ -1,5 +1,45 @@
 [
   {
+    "fingerprint": "XAG/USD|5m|1|2026-09-04T14:55:00Z|ICT",
+    "date": "2026-09-04T14:56:53.902Z",
+    "pair": "XAG/USD",
+    "timeframe": "5M",
+    "timeframeKey": "5m",
+    "candleTime": "2026-09-04T14:55:00Z",
+    "direction": "BUY",
+    "score": 55,
+    "reasons": [
+      "هيكل صاعد (Bias/BOS صاعد)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 65.7805,
+    "sl": 65.40148655845051,
+    "tp": 66.91216666666666,
+    "rr": 2.985821985732649,
+    "source": "ICT",
+    "createdAt": 1788533813902
+  },
+  {
+    "fingerprint": "XAU/USD|5m|1|2026-09-04T14:55:00Z|ICT",
+    "date": "2026-09-04T14:56:53.025Z",
+    "pair": "XAU/USD",
+    "timeframe": "5M",
+    "timeframeKey": "5m",
+    "candleTime": "2026-09-04T14:55:00Z",
+    "direction": "BUY",
+    "score": 55,
+    "reasons": [
+      "هيكل صاعد (Bias/BOS صاعد)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 4422.863,
+    "sl": 4405.894001427356,
+    "tp": 4476.7474999999995,
+    "rr": 3.175467295215973,
+    "source": "ICT",
+    "createdAt": 1788533813025
+  },
+  {
     "fingerprint": "EUR/GBP|1h|-1|2026-09-04T14:00:00Z|ICT",
     "date": "2026-09-04T14:45:00.509Z",
     "pair": "EUR/GBP",
