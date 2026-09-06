@@ -1,5 +1,45 @@
 [
   {
+    "fingerprint": "BTC/USD|1m|-1|2026-09-06T17:07:00Z|ICT",
+    "date": "2026-09-06T17:07:40.756Z",
+    "pair": "BTC/USD",
+    "timeframe": "1M",
+    "timeframeKey": "1m",
+    "candleTime": "2026-09-06T17:07:00Z",
+    "direction": "SELL",
+    "score": 55,
+    "reasons": [
+      "هيكل هابط (Bias/BOS هابط)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 79667.06,
+    "sl": 79691.63564259982,
+    "tp": 79617.90871480035,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1788714460756
+  },
+  {
+    "fingerprint": "BTC/USD|5m|1|2026-09-06T17:05:00Z|ICT",
+    "date": "2026-09-06T17:07:40.743Z",
+    "pair": "BTC/USD",
+    "timeframe": "5M",
+    "timeframeKey": "5m",
+    "candleTime": "2026-09-06T17:05:00Z",
+    "direction": "BUY",
+    "score": 55,
+    "reasons": [
+      "هيكل صاعد (Bias/BOS صاعد)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 79667.06,
+    "sl": 79630.6375079869,
+    "tp": 79753.69499999999,
+    "rr": 2.37861264322188,
+    "source": "ICT",
+    "createdAt": 1788714460743
+  },
+  {
     "fingerprint": "BTC/USD|15m|-1|2026-09-06T16:30:00Z|ICT",
     "date": "2026-09-06T16:34:21.866Z",
     "pair": "BTC/USD",
