@@ -1,5 +1,25 @@
 [
   {
+    "fingerprint": "USD/JPY|1m|1|2026-09-06T21:31:00Z|ICT",
+    "date": "2026-09-06T21:31:07.713Z",
+    "pair": "USD/JPY",
+    "timeframe": "1M",
+    "timeframeKey": "1m",
+    "candleTime": "2026-09-06T21:31:00Z",
+    "direction": "BUY",
+    "score": 55,
+    "reasons": [
+      "هيكل صاعد (Bias/BOS صاعد)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 156.0775,
+    "sl": 156.05858386042027,
+    "tp": 156.11533227915942,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1788730267714
+  },
+  {
     "fingerprint": "GBP/USD|5m|-1|2026-09-06T21:20:00Z|ICT",
     "date": "2026-09-06T21:20:38.349Z",
     "pair": "GBP/USD",
