@@ -1,5 +1,25 @@
 [
   {
+    "fingerprint": "BTC/USD|1m|-1|2026-09-07T09:52:00Z|ICT",
+    "date": "2026-09-07T09:52:45.332Z",
+    "pair": "BTC/USD",
+    "timeframe": "1M",
+    "timeframeKey": "1m",
+    "candleTime": "2026-09-07T09:52:00Z",
+    "direction": "SELL",
+    "score": 55,
+    "reasons": [
+      "هيكل هابط (Bias/BOS هابط)",
+      "السعر داخل Fair Value Gap هابط غير ممتلئ"
+    ],
+    "entry": 79361.41,
+    "sl": 79429.82709872662,
+    "tp": 79224.57580254678,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1788774765332
+  },
+  {
     "fingerprint": "EUR/USD|5m|1|2026-09-07T09:20:00Z|ICT",
     "date": "2026-09-07T09:21:52.306Z",
     "pair": "EUR/USD",
