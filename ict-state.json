@@ -1,5 +1,25 @@
 [
   {
+    "fingerprint": "USD/TRY|1m|-1|2026-09-07T21:56:00Z|ICT",
+    "date": "2026-09-07T21:56:58.987Z",
+    "pair": "USD/TRY",
+    "timeframe": "1M",
+    "timeframeKey": "1m",
+    "candleTime": "2026-09-07T21:56:00Z",
+    "direction": "SELL",
+    "score": 55,
+    "reasons": [
+      "هيكل هابط (Bias/BOS هابط)",
+      "السعر داخل Fair Value Gap هابط غير ممتلئ"
+    ],
+    "entry": 48.44439,
+    "sl": 48.445215942795976,
+    "tp": 48.440885,
+    "rr": 4.243635294197767,
+    "source": "ICT",
+    "createdAt": 1788818218987
+  },
+  {
     "fingerprint": "BTC/USD|5m|1|2026-09-07T21:45:00Z|ICT",
     "date": "2026-09-07T21:47:05.163Z",
     "pair": "BTC/USD",
