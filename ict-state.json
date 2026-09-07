@@ -1,5 +1,45 @@
 [
   {
+    "fingerprint": "USD/TRY|1m|-1|2026-09-07T19:07:00Z|ICT",
+    "date": "2026-09-07T19:07:55.654Z",
+    "pair": "USD/TRY",
+    "timeframe": "1M",
+    "timeframeKey": "1m",
+    "candleTime": "2026-09-07T19:07:00Z",
+    "direction": "SELL",
+    "score": 55,
+    "reasons": [
+      "هيكل هابط (Bias/BOS هابط)",
+      "السعر داخل Fair Value Gap هابط غير ممتلئ"
+    ],
+    "entry": 48.42926,
+    "sl": 48.42929090448986,
+    "tp": 48.428945,
+    "rr": 10.19269372874093,
+    "source": "ICT",
+    "createdAt": 1788808075654
+  },
+  {
+    "fingerprint": "GBP/USD|15m|1|2026-09-07T19:00:00Z|ICT",
+    "date": "2026-09-07T19:07:55.467Z",
+    "pair": "GBP/USD",
+    "timeframe": "15M",
+    "timeframeKey": "15m",
+    "candleTime": "2026-09-07T19:00:00Z",
+    "direction": "BUY",
+    "score": 55,
+    "reasons": [
+      "هيكل صاعد (Bias/BOS صاعد)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 1.354105,
+    "sl": 1.353660426724687,
+    "tp": 1.3549941465506257,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1788808075467
+  },
+  {
     "fingerprint": "GBP/USD|15m|1|2026-09-07T18:45:00Z|ICT",
     "date": "2026-09-07T18:54:50.829Z",
     "pair": "GBP/USD",
