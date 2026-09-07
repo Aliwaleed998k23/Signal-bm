@@ -1,5 +1,45 @@
 [
   {
+    "fingerprint": "BTC/USD|1m|-1|2026-09-07T01:31:00Z|ICT",
+    "date": "2026-09-07T01:31:53.999Z",
+    "pair": "BTC/USD",
+    "timeframe": "1M",
+    "timeframeKey": "1m",
+    "candleTime": "2026-09-07T01:31:00Z",
+    "direction": "SELL",
+    "score": 55,
+    "reasons": [
+      "هيكل هابط (Bias/BOS هابط)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 79933.07,
+    "sl": 79941.62624721497,
+    "tp": 79848.84999999999,
+    "rr": 9.84310035511244,
+    "source": "ICT",
+    "createdAt": 1788744713999
+  },
+  {
+    "fingerprint": "XAU/USD|1m|-1|2026-09-07T01:31:00Z|ICT",
+    "date": "2026-09-07T01:31:53.336Z",
+    "pair": "XAU/USD",
+    "timeframe": "1M",
+    "timeframeKey": "1m",
+    "candleTime": "2026-09-07T01:31:00Z",
+    "direction": "SELL",
+    "score": 55,
+    "reasons": [
+      "هيكل هابط (Bias/BOS هابط)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 4406.513,
+    "sl": 4407.46604252091,
+    "tp": 4404.606914958179,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1788744713336
+  },
+  {
     "fingerprint": "XAU/USD|1m|-1|2026-09-07T00:50:00Z|ICT",
     "date": "2026-09-07T00:50:12.946Z",
     "pair": "XAU/USD",
