@@ -1,5 +1,25 @@
 [
   {
+    "fingerprint": "XAU/USD|1h|-1|2026-09-07T16:00:00Z|ICT",
+    "date": "2026-09-07T16:32:18.426Z",
+    "pair": "XAU/USD",
+    "timeframe": "1H",
+    "timeframeKey": "1h",
+    "candleTime": "2026-09-07T16:00:00Z",
+    "direction": "SELL",
+    "score": 55,
+    "reasons": [
+      "هيكل هابط (Bias/BOS هابط)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 4413.378,
+    "sl": 4427.324254752587,
+    "tp": 4383.243,
+    "rr": 2.160795176526426,
+    "source": "ICT",
+    "createdAt": 1788798738426
+  },
+  {
     "fingerprint": "EUR/USD|15m|1|2026-09-07T16:15:00Z|ICT",
     "date": "2026-09-07T16:16:11.011Z",
     "pair": "EUR/USD",
