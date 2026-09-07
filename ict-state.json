@@ -1,5 +1,25 @@
 [
   {
+    "fingerprint": "USD/JPY|1m|-1|2026-09-07T20:53:00Z|ICT",
+    "date": "2026-09-07T20:53:10.754Z",
+    "pair": "USD/JPY",
+    "timeframe": "1M",
+    "timeframeKey": "1m",
+    "candleTime": "2026-09-07T20:53:00Z",
+    "direction": "SELL",
+    "score": 55,
+    "reasons": [
+      "هيكل هابط (Bias/BOS هابط)",
+      "السعر داخل Fair Value Gap هابط غير ممتلئ"
+    ],
+    "entry": 154.36,
+    "sl": 154.37255137853967,
+    "tp": 154.3348972429207,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1788814390754
+  },
+  {
     "fingerprint": "EUR/GBP|1m|-1|2026-09-07T20:41:00Z|ICT",
     "date": "2026-09-07T20:41:37.641Z",
     "pair": "EUR/GBP",
