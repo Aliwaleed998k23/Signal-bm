@@ -1,5 +1,65 @@
 [
   {
+    "fingerprint": "BTC/USD|1m|1|2026-09-07T10:50:00Z|ICT",
+    "date": "2026-09-07T10:50:32.064Z",
+    "pair": "BTC/USD",
+    "timeframe": "1M",
+    "timeframeKey": "1m",
+    "candleTime": "2026-09-07T10:50:00Z",
+    "direction": "BUY",
+    "score": 55,
+    "reasons": [
+      "هيكل صاعد (Bias/BOS صاعد)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 79395.37,
+    "sl": 79391.41502674509,
+    "tp": 79425.218,
+    "rr": 7.546953690009013,
+    "source": "ICT",
+    "createdAt": 1788778232064
+  },
+  {
+    "fingerprint": "BTC/USD|5m|-1|2026-09-07T10:50:00Z|ICT",
+    "date": "2026-09-07T10:50:32.064Z",
+    "pair": "BTC/USD",
+    "timeframe": "5M",
+    "timeframeKey": "5m",
+    "candleTime": "2026-09-07T10:50:00Z",
+    "direction": "SELL",
+    "score": 55,
+    "reasons": [
+      "هيكل هابط (Bias/BOS هابط)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 79395.37,
+    "sl": 79461.40628253287,
+    "tp": 79263.29743493424,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1788778232064
+  },
+  {
+    "fingerprint": "XAG/USD|15m|1|2026-09-07T10:45:00Z|ICT",
+    "date": "2026-09-07T10:50:32.016Z",
+    "pair": "XAG/USD",
+    "timeframe": "15M",
+    "timeframeKey": "15m",
+    "candleTime": "2026-09-07T10:45:00Z",
+    "direction": "BUY",
+    "score": 55,
+    "reasons": [
+      "هيكل صاعد (Bias/BOS صاعد)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 65.6525,
+    "sl": 65.46374089486643,
+    "tp": 66.19,
+    "rr": 2.8475447561570424,
+    "source": "ICT",
+    "createdAt": 1788778232016
+  },
+  {
     "fingerprint": "BTC/USD|1m|1|2026-09-07T10:37:00Z|ICT",
     "date": "2026-09-07T10:37:35.009Z",
     "pair": "BTC/USD",
