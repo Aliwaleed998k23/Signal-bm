@@ -1,5 +1,65 @@
 [
   {
+    "fingerprint": "BTC/USD|5m|-1|2026-09-07T08:15:00Z|ICT",
+    "date": "2026-09-07T08:19:49.060Z",
+    "pair": "BTC/USD",
+    "timeframe": "5M",
+    "timeframeKey": "5m",
+    "candleTime": "2026-09-07T08:15:00Z",
+    "direction": "SELL",
+    "score": 55,
+    "reasons": [
+      "هيكل هابط (Bias/BOS هابط)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 79498.82,
+    "sl": 79708.90753041164,
+    "tp": 79078.64493917674,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1788769189060
+  },
+  {
+    "fingerprint": "USD/TRY|15m|-1|2026-09-07T08:15:00Z|ICT",
+    "date": "2026-09-07T08:19:48.840Z",
+    "pair": "USD/TRY",
+    "timeframe": "15M",
+    "timeframeKey": "15m",
+    "candleTime": "2026-09-07T08:15:00Z",
+    "direction": "SELL",
+    "score": 55,
+    "reasons": [
+      "هيكل هابط (Bias/BOS هابط)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 48.4368,
+    "sl": 48.44171606314647,
+    "tp": 48.42696787370705,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1788769188840
+  },
+  {
+    "fingerprint": "USD/TRY|5m|-1|2026-09-07T08:15:00Z|ICT",
+    "date": "2026-09-07T08:19:48.743Z",
+    "pair": "USD/TRY",
+    "timeframe": "5M",
+    "timeframeKey": "5m",
+    "candleTime": "2026-09-07T08:15:00Z",
+    "direction": "SELL",
+    "score": 55,
+    "reasons": [
+      "هيكل هابط (Bias/BOS هابط)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 48.4368,
+    "sl": 48.43943640430645,
+    "tp": 48.4315271913871,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1788769188743
+  },
+  {
     "fingerprint": "XAU/USD|15m|-1|2026-09-07T07:45:00Z|ICT",
     "date": "2026-09-07T07:59:24.011Z",
     "pair": "XAU/USD",
