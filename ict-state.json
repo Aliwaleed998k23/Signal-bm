@@ -1,5 +1,45 @@
 [
   {
+    "fingerprint": "USD/TRY|1m|-1|2026-09-08T15:43:00Z|ICT",
+    "date": "2026-09-08T15:43:08.145Z",
+    "pair": "USD/TRY",
+    "timeframe": "1M",
+    "timeframeKey": "1m",
+    "candleTime": "2026-09-08T15:43:00Z",
+    "direction": "SELL",
+    "score": 55,
+    "reasons": [
+      "هيكل هابط (Bias/BOS هابط)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 48.45458,
+    "sl": 48.456916206774345,
+    "tp": 48.44990758645131,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1788882188145
+  },
+  {
+    "fingerprint": "EUR/USD|5m|1|2026-09-08T15:40:00Z|ICT",
+    "date": "2026-09-08T15:43:07.777Z",
+    "pair": "EUR/USD",
+    "timeframe": "5M",
+    "timeframeKey": "5m",
+    "candleTime": "2026-09-08T15:40:00Z",
+    "direction": "BUY",
+    "score": 55,
+    "reasons": [
+      "هيكل صاعد (Bias/BOS صاعد)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 1.1628,
+    "sl": 1.1628437241467093,
+    "tp": 1.1628874482934186,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1788882187777
+  },
+  {
     "fingerprint": "USD/JPY|1m|1|2026-09-08T15:26:00Z|ICT",
     "date": "2026-09-08T15:26:11.438Z",
     "pair": "USD/JPY",
