@@ -1,5 +1,25 @@
 [
   {
+    "fingerprint": "USD/JPY|1h|-1|2026-09-08T13:00:00Z|ICT",
+    "date": "2026-09-08T13:14:35.325Z",
+    "pair": "USD/JPY",
+    "timeframe": "1H",
+    "timeframeKey": "1h",
+    "candleTime": "2026-09-08T13:00:00Z",
+    "direction": "SELL",
+    "score": 55,
+    "reasons": [
+      "هيكل هابط (Bias/BOS هابط)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 153.8375,
+    "sl": 154.48716799575934,
+    "tp": 152.53816400848135,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1788873275325
+  },
+  {
     "fingerprint": "BTC/USD|5m|-1|2026-09-08T12:35:00Z|ICT",
     "date": "2026-09-08T12:40:01.399Z",
     "pair": "BTC/USD",
