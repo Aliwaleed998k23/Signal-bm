@@ -1,5 +1,85 @@
 [
   {
+    "fingerprint": "EUR/GBP|5m|-1|2026-09-09T07:35:00Z|ICT",
+    "date": "2026-09-09T07:36:51.701Z",
+    "pair": "EUR/GBP",
+    "timeframe": "5M",
+    "timeframeKey": "5m",
+    "candleTime": "2026-09-09T07:35:00Z",
+    "direction": "SELL",
+    "score": 55,
+    "reasons": [
+      "هيكل هابط (Bias/BOS هابط)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 0.858385,
+    "sl": 0.8583845335274836,
+    "tp": 0.8583840670549672,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1788939411701
+  },
+  {
+    "fingerprint": "GBP/USD|5m|1|2026-09-09T07:35:00Z|ICT",
+    "date": "2026-09-09T07:36:51.363Z",
+    "pair": "GBP/USD",
+    "timeframe": "5M",
+    "timeframeKey": "5m",
+    "candleTime": "2026-09-09T07:35:00Z",
+    "direction": "BUY",
+    "score": 55,
+    "reasons": [
+      "هيكل صاعد (Bias/BOS صاعد)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 1.356025,
+    "sl": 1.3558113143444521,
+    "tp": 1.3564523713110959,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1788939411363
+  },
+  {
+    "fingerprint": "EUR/USD|5m|1|2026-09-09T07:35:00Z|ICT",
+    "date": "2026-09-09T07:36:51.320Z",
+    "pair": "EUR/USD",
+    "timeframe": "5M",
+    "timeframeKey": "5m",
+    "candleTime": "2026-09-09T07:35:00Z",
+    "direction": "BUY",
+    "score": 55,
+    "reasons": [
+      "هيكل صاعد (Bias/BOS صاعد)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 1.164,
+    "sl": 1.1637578688619878,
+    "tp": 1.164484262276024,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1788939411320
+  },
+  {
+    "fingerprint": "EUR/USD|1m|-1|2026-09-09T07:36:00Z|ICT",
+    "date": "2026-09-09T07:36:51.291Z",
+    "pair": "EUR/USD",
+    "timeframe": "1M",
+    "timeframeKey": "1m",
+    "candleTime": "2026-09-09T07:36:00Z",
+    "direction": "SELL",
+    "score": 55,
+    "reasons": [
+      "هيكل هابط (Bias/BOS هابط)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 1.164,
+    "sl": 1.1641783629213394,
+    "tp": 1.163643274157321,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1788939411291
+  },
+  {
     "fingerprint": "USD/TRY|15m|-1|2026-09-09T07:15:00Z|ICT",
     "date": "2026-09-09T07:21:47.961Z",
     "pair": "USD/TRY",
