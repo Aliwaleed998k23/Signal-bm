@@ -1,5 +1,25 @@
 [
   {
+    "fingerprint": "EUR/GBP|1m|1|2026-09-09T19:49:00Z|ICT",
+    "date": "2026-09-09T19:49:52.927Z",
+    "pair": "EUR/GBP",
+    "timeframe": "1M",
+    "timeframeKey": "1m",
+    "candleTime": "2026-09-09T19:49:00Z",
+    "direction": "BUY",
+    "score": 55,
+    "reasons": [
+      "هيكل صاعد (Bias/BOS صاعد)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 0.858595,
+    "sl": 0.8585641404912543,
+    "tp": 0.8586567190174914,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1788983392927
+  },
+  {
     "fingerprint": "BTC/USD|5m|-1|2026-09-09T19:25:00Z|ICT",
     "date": "2026-09-09T19:27:34.255Z",
     "pair": "BTC/USD",
