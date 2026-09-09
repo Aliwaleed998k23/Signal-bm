@@ -1,5 +1,25 @@
 [
   {
+    "fingerprint": "USD/TRY|1m|1|2026-09-09T15:49:00Z|ICT",
+    "date": "2026-09-09T15:49:37.116Z",
+    "pair": "USD/TRY",
+    "timeframe": "1M",
+    "timeframeKey": "1m",
+    "candleTime": "2026-09-09T15:49:00Z",
+    "direction": "BUY",
+    "score": 55,
+    "reasons": [
+      "هيكل صاعد (Bias/BOS صاعد)",
+      "السعر داخل Fair Value Gap صاعد غير ممتلئ"
+    ],
+    "entry": 48.47738,
+    "sl": 48.47733183801403,
+    "tp": 48.47747632397193,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1788968977116
+  },
+  {
     "fingerprint": "USD/TRY|15m|1|2026-09-09T15:30:00Z|ICT",
     "date": "2026-09-09T15:35:02.359Z",
     "pair": "USD/TRY",
