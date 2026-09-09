@@ -1,5 +1,25 @@
 [
   {
+    "fingerprint": "USD/TRY|15m|1|2026-09-09T12:30:00Z|ICT",
+    "date": "2026-09-09T12:39:42.580Z",
+    "pair": "USD/TRY",
+    "timeframe": "15M",
+    "timeframeKey": "15m",
+    "candleTime": "2026-09-09T12:30:00Z",
+    "direction": "BUY",
+    "score": 55,
+    "reasons": [
+      "هيكل صاعد (Bias/BOS صاعد)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 48.47732,
+    "sl": 48.47718426733761,
+    "tp": 48.479381428571436,
+    "rr": 15.187417200832687,
+    "source": "ICT",
+    "createdAt": 1788957582580
+  },
+  {
     "fingerprint": "USD/TRY|15m|1|2026-09-09T12:15:00Z|ICT",
     "date": "2026-09-09T12:18:33.009Z",
     "pair": "USD/TRY",
