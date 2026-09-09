@@ -1,5 +1,25 @@
 [
   {
+    "fingerprint": "USD/JPY|1m|1|2026-09-09T17:55:00Z|ICT",
+    "date": "2026-09-09T17:55:14.267Z",
+    "pair": "USD/JPY",
+    "timeframe": "1M",
+    "timeframeKey": "1m",
+    "candleTime": "2026-09-09T17:55:00Z",
+    "direction": "BUY",
+    "score": 55,
+    "reasons": [
+      "هيكل صاعد (Bias/BOS صاعد)",
+      "السعر داخل Fair Value Gap صاعد غير ممتلئ"
+    ],
+    "entry": 153.5005,
+    "sl": 153.48491722811357,
+    "tp": 153.55616666666666,
+    "rr": 3.5723212193845177,
+    "source": "ICT",
+    "createdAt": 1788976514267
+  },
+  {
     "fingerprint": "USD/TRY|1m|-1|2026-09-09T17:17:00Z|ICT",
     "date": "2026-09-09T17:17:26.983Z",
     "pair": "USD/TRY",
