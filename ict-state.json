@@ -1,5 +1,85 @@
 [
   {
+    "fingerprint": "USD/TRY|15m|-1|2026-09-09T07:15:00Z|ICT",
+    "date": "2026-09-09T07:21:47.961Z",
+    "pair": "USD/TRY",
+    "timeframe": "15M",
+    "timeframeKey": "15m",
+    "candleTime": "2026-09-09T07:15:00Z",
+    "direction": "SELL",
+    "score": 55,
+    "reasons": [
+      "هيكل هابط (Bias/BOS هابط)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 48.4773,
+    "sl": 48.47771554073908,
+    "tp": 48.46421875,
+    "rr": 31.480066260309894,
+    "source": "ICT",
+    "createdAt": 1788938507961
+  },
+  {
+    "fingerprint": "USD/JPY|15m|-1|2026-09-09T07:15:00Z|ICT",
+    "date": "2026-09-09T07:21:47.799Z",
+    "pair": "USD/JPY",
+    "timeframe": "15M",
+    "timeframeKey": "15m",
+    "candleTime": "2026-09-09T07:15:00Z",
+    "direction": "SELL",
+    "score": 55,
+    "reasons": [
+      "هيكل هابط (Bias/BOS هابط)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 153.2905,
+    "sl": 153.4103976837423,
+    "tp": 153.05070463251542,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1788938507799
+  },
+  {
+    "fingerprint": "USD/JPY|1m|-1|2026-09-09T07:21:00Z|ICT",
+    "date": "2026-09-09T07:21:47.750Z",
+    "pair": "USD/JPY",
+    "timeframe": "1M",
+    "timeframeKey": "1m",
+    "candleTime": "2026-09-09T07:21:00Z",
+    "direction": "SELL",
+    "score": 55,
+    "reasons": [
+      "هيكل هابط (Bias/BOS هابط)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 153.2905,
+    "sl": 153.36058907821163,
+    "tp": 153.15032184357676,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1788938507750
+  },
+  {
+    "fingerprint": "EUR/USD|1m|1|2026-09-09T07:21:00Z|ICT",
+    "date": "2026-09-09T07:21:47.546Z",
+    "pair": "EUR/USD",
+    "timeframe": "1M",
+    "timeframeKey": "1m",
+    "candleTime": "2026-09-09T07:21:00Z",
+    "direction": "BUY",
+    "score": 55,
+    "reasons": [
+      "هيكل صاعد (Bias/BOS صاعد)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 1.16411,
+    "sl": 1.163904625707333,
+    "tp": 1.1645207485853337,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1788938507546
+  },
+  {
     "fingerprint": "BTC/USD|1m|-1|2026-09-09T07:02:00Z|ICT",
     "date": "2026-09-09T07:02:23.052Z",
     "pair": "BTC/USD",
