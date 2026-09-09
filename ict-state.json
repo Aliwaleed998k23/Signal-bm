@@ -1,5 +1,45 @@
 [
   {
+    "fingerprint": "USD/TRY|15m|1|2026-09-09T15:30:00Z|ICT",
+    "date": "2026-09-09T15:35:02.359Z",
+    "pair": "USD/TRY",
+    "timeframe": "15M",
+    "timeframeKey": "15m",
+    "candleTime": "2026-09-09T15:30:00Z",
+    "direction": "BUY",
+    "score": 55,
+    "reasons": [
+      "هيكل صاعد (Bias/BOS صاعد)",
+      "السعر داخل Fair Value Gap صاعد غير ممتلئ"
+    ],
+    "entry": 48.47739,
+    "sl": 48.476888757189684,
+    "tp": 48.47801571428571,
+    "rr": 1.2483257072890124,
+    "source": "ICT",
+    "createdAt": 1788968102359
+  },
+  {
+    "fingerprint": "XAU/USD|15m|1|2026-09-09T15:30:00Z|ICT",
+    "date": "2026-09-09T15:35:01.732Z",
+    "pair": "XAU/USD",
+    "timeframe": "15M",
+    "timeframeKey": "15m",
+    "candleTime": "2026-09-09T15:30:00Z",
+    "direction": "BUY",
+    "score": 55,
+    "reasons": [
+      "هيكل صاعد (Bias/BOS صاعد)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 4401.42,
+    "sl": 4381.443707090244,
+    "tp": 4441.372585819512,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1788968101732
+  },
+  {
     "fingerprint": "BTC/USD|1m|-1|2026-09-09T13:47:00Z|ICT",
     "date": "2026-09-09T13:47:28.377Z",
     "pair": "BTC/USD",
