@@ -1,5 +1,45 @@
 [
   {
+    "fingerprint": "XAG/USD|5m|-1|2026-09-09T04:25:00Z|ICT",
+    "date": "2026-09-09T04:28:34.657Z",
+    "pair": "XAG/USD",
+    "timeframe": "5M",
+    "timeframeKey": "5m",
+    "candleTime": "2026-09-09T04:25:00Z",
+    "direction": "SELL",
+    "score": 55,
+    "reasons": [
+      "هيكل هابط (Bias/BOS هابط)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 66.2675,
+    "sl": 66.35960733619866,
+    "tp": 65.664,
+    "rr": 6.55213824334591,
+    "source": "ICT",
+    "createdAt": 1788928114657
+  },
+  {
+    "fingerprint": "XAG/USD|1h|-1|2026-09-09T04:00:00Z|ICT",
+    "date": "2026-09-09T04:28:34.655Z",
+    "pair": "XAG/USD",
+    "timeframe": "1H",
+    "timeframeKey": "1h",
+    "candleTime": "2026-09-09T04:00:00Z",
+    "direction": "SELL",
+    "score": 55,
+    "reasons": [
+      "هيكل هابط (Bias/BOS هابط)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 66.2675,
+    "sl": 66.94755066958211,
+    "tp": 64.90739866083577,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1788928114655
+  },
+  {
     "fingerprint": "XAG/USD|15m|1|2026-09-09T04:00:00Z|ICT",
     "date": "2026-09-09T04:12:13.687Z",
     "pair": "XAG/USD",
