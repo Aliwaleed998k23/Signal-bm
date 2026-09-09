@@ -1,5 +1,45 @@
 [
   {
+    "fingerprint": "EUR/GBP|1m|-1|2026-09-09T22:30:00Z|ICT",
+    "date": "2026-09-09T22:30:14.412Z",
+    "pair": "EUR/GBP",
+    "timeframe": "1M",
+    "timeframeKey": "1m",
+    "candleTime": "2026-09-09T22:30:00Z",
+    "direction": "SELL",
+    "score": 55,
+    "reasons": [
+      "هيكل هابط (Bias/BOS هابط)",
+      "السعر داخل Fair Value Gap هابط غير ممتلئ"
+    ],
+    "entry": 0.85879,
+    "sl": 0.8588192335097431,
+    "tp": 0.8587349999999999,
+    "rr": 1.881402557666798,
+    "source": "ICT",
+    "createdAt": 1788993014412
+  },
+  {
+    "fingerprint": "USD/TRY|5m|1|2026-09-09T22:30:00Z|ICT",
+    "date": "2026-09-09T22:30:14.345Z",
+    "pair": "USD/TRY",
+    "timeframe": "5M",
+    "timeframeKey": "5m",
+    "candleTime": "2026-09-09T22:30:00Z",
+    "direction": "BUY",
+    "score": 55,
+    "reasons": [
+      "هيكل صاعد (Bias/BOS صاعد)",
+      "السعر داخل Fair Value Gap صاعد غير ممتلئ"
+    ],
+    "entry": 48.49174,
+    "sl": 48.48787986173228,
+    "tp": 48.49946027653544,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1788993014345
+  },
+  {
     "fingerprint": "BTC/USD|1m|1|2026-09-09T21:09:00Z|ICT",
     "date": "2026-09-09T21:09:55.694Z",
     "pair": "BTC/USD",
