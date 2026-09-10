@@ -1,5 +1,45 @@
 [
   {
+    "fingerprint": "USD/TRY|15m|-1|2026-09-10T14:15:00Z|ICT",
+    "date": "2026-09-10T14:25:10.259Z",
+    "pair": "USD/TRY",
+    "timeframe": "15M",
+    "timeframeKey": "15m",
+    "candleTime": "2026-09-10T14:15:00Z",
+    "direction": "SELL",
+    "score": 55,
+    "reasons": [
+      "هيكل هابط (Bias/BOS هابط)",
+      "السعر داخل Fair Value Gap هابط غير ممتلئ"
+    ],
+    "entry": 48.49457,
+    "sl": 48.49560723553911,
+    "tp": 48.492495528921786,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1789050310259
+  },
+  {
+    "fingerprint": "XAU/USD|15m|-1|2026-09-10T14:15:00Z|ICT",
+    "date": "2026-09-10T14:25:09.914Z",
+    "pair": "XAU/USD",
+    "timeframe": "15M",
+    "timeframeKey": "15m",
+    "candleTime": "2026-09-10T14:15:00Z",
+    "direction": "SELL",
+    "score": 55,
+    "reasons": [
+      "هيكل هابط (Bias/BOS هابط)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 4373.019,
+    "sl": 4380.94067496417,
+    "tp": 4357.17565007166,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1789050309915
+  },
+  {
     "fingerprint": "XAG/USD|5m|1|2026-09-10T14:05:00Z|ICT",
     "date": "2026-09-10T14:08:26.983Z",
     "pair": "XAG/USD",
@@ -9959,45 +9999,5 @@
     "rr": 2,
     "source": "ICT",
     "createdAt": 1788474151777
-  },
-  {
-    "fingerprint": "EUR/GBP|5m|-1|2026-09-03T22:05:00Z|ICT",
-    "date": "2026-09-03T22:07:40.844Z",
-    "pair": "EUR/GBP",
-    "timeframe": "5M",
-    "timeframeKey": "5m",
-    "candleTime": "2026-09-03T22:05:00Z",
-    "direction": "SELL",
-    "score": 55,
-    "reasons": [
-      "هيكل هابط (Bias/BOS هابط)",
-      "السعر داخل منطقة OTE (61.8%-79%)"
-    ],
-    "entry": 0.85959,
-    "sl": 0.8596424258354969,
-    "tp": 0.8593421428571428,
-    "rr": 4.727767149685409,
-    "source": "ICT",
-    "createdAt": 1788473260844
-  },
-  {
-    "fingerprint": "GBP/USD|5m|-1|2026-09-03T21:50:00Z|ICT",
-    "date": "2026-09-03T21:54:55.741Z",
-    "pair": "GBP/USD",
-    "timeframe": "5M",
-    "timeframeKey": "5m",
-    "candleTime": "2026-09-03T21:50:00Z",
-    "direction": "SELL",
-    "score": 55,
-    "reasons": [
-      "هيكل هابط (Bias/BOS هابط)",
-      "السعر داخل منطقة OTE (61.8%-79%)"
-    ],
-    "entry": 1.352715,
-    "sl": 1.3527555495456902,
-    "tp": 1.3526339009086192,
-    "rr": 2,
-    "source": "ICT",
-    "createdAt": 1788472495741
   }
 ]
