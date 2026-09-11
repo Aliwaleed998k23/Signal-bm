@@ -1,5 +1,45 @@
 [
   {
+    "fingerprint": "BTC/USD|1m|-1|2026-09-11T16:29:00Z|ICT",
+    "date": "2026-09-11T16:29:31.371Z",
+    "pair": "BTC/USD",
+    "timeframe": "1M",
+    "timeframeKey": "1m",
+    "candleTime": "2026-09-11T16:29:00Z",
+    "direction": "SELL",
+    "score": 55,
+    "reasons": [
+      "هيكل هابط (Bias/BOS هابط)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 77696.99,
+    "sl": 77877.06456434815,
+    "tp": 77323.725,
+    "rr": 2.0728357797292376,
+    "source": "ICT",
+    "createdAt": 1789144171371
+  },
+  {
+    "fingerprint": "XAG/USD|1m|-1|2026-09-11T16:29:00Z|ICT",
+    "date": "2026-09-11T16:29:31.188Z",
+    "pair": "XAG/USD",
+    "timeframe": "1M",
+    "timeframeKey": "1m",
+    "candleTime": "2026-09-11T16:29:00Z",
+    "direction": "SELL",
+    "score": 55,
+    "reasons": [
+      "هيكل هابط (Bias/BOS هابط)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 64.3165,
+    "sl": 64.42827184058551,
+    "tp": 64.092956318829,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1789144171188
+  },
+  {
     "fingerprint": "BTC/USD|15m|1|2026-09-11T16:00:00Z|ICT",
     "date": "2026-09-11T16:12:48.480Z",
     "pair": "BTC/USD",
@@ -9959,45 +9999,5 @@
     "rr": 2,
     "source": "ICT",
     "createdAt": 1788564486435
-  },
-  {
-    "fingerprint": "BTC/USD|15m|-1|2026-09-04T22:30:00Z|ICT",
-    "date": "2026-09-04T22:31:16.837Z",
-    "pair": "BTC/USD",
-    "timeframe": "15M",
-    "timeframeKey": "15m",
-    "candleTime": "2026-09-04T22:30:00Z",
-    "direction": "SELL",
-    "score": 55,
-    "reasons": [
-      "هيكل هابط (Bias/BOS هابط)",
-      "السعر داخل منطقة OTE (61.8%-79%)"
-    ],
-    "entry": 79734.2,
-    "sl": 79967.46248913064,
-    "tp": 79267.6750217387,
-    "rr": 2,
-    "source": "ICT",
-    "createdAt": 1788561076837
-  },
-  {
-    "fingerprint": "BTC/USD|1m|-1|2026-09-04T22:06:00Z|ICT",
-    "date": "2026-09-04T22:06:05.278Z",
-    "pair": "BTC/USD",
-    "timeframe": "1M",
-    "timeframeKey": "1m",
-    "candleTime": "2026-09-04T22:06:00Z",
-    "direction": "SELL",
-    "score": 55,
-    "reasons": [
-      "هيكل هابط (Bias/BOS هابط)",
-      "السعر داخل Fair Value Gap هابط غير ممتلئ"
-    ],
-    "entry": 79674.59,
-    "sl": 79712.99502479169,
-    "tp": 79597.77995041662,
-    "rr": 2,
-    "source": "ICT",
-    "createdAt": 1788559565278
   }
 ]
