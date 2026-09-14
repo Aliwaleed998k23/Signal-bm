@@ -1,5 +1,85 @@
 [
   {
+    "fingerprint": "XAG/USD|1m|1|2026-09-14T05:12:00Z|ICT",
+    "date": "2026-09-14T05:12:50.310Z",
+    "pair": "XAG/USD",
+    "timeframe": "1M",
+    "timeframeKey": "1m",
+    "candleTime": "2026-09-14T05:12:00Z",
+    "direction": "BUY",
+    "score": 55,
+    "reasons": [
+      "هيكل صاعد (Bias/BOS صاعد)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 63.9175,
+    "sl": 63.83961777438592,
+    "tp": 64.07326445122814,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1789362770310
+  },
+  {
+    "fingerprint": "XAG/USD|5m|-1|2026-09-14T05:10:00Z|ICT",
+    "date": "2026-09-14T05:12:50.310Z",
+    "pair": "XAG/USD",
+    "timeframe": "5M",
+    "timeframeKey": "5m",
+    "candleTime": "2026-09-14T05:10:00Z",
+    "direction": "SELL",
+    "score": 55,
+    "reasons": [
+      "هيكل هابط (Bias/BOS هابط)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 63.9175,
+    "sl": 64.05905093007294,
+    "tp": 63.634398139854106,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1789362770310
+  },
+  {
+    "fingerprint": "USD/JPY|5m|-1|2026-09-14T05:10:00Z|ICT",
+    "date": "2026-09-14T05:12:49.983Z",
+    "pair": "USD/JPY",
+    "timeframe": "5M",
+    "timeframeKey": "5m",
+    "candleTime": "2026-09-14T05:10:00Z",
+    "direction": "SELL",
+    "score": 55,
+    "reasons": [
+      "هيكل هابط (Bias/BOS هابط)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 154.0295,
+    "sl": 154.09769280834067,
+    "tp": 153.8931143833187,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1789362769983
+  },
+  {
+    "fingerprint": "XAU/USD|5m|-1|2026-09-14T05:10:00Z|ICT",
+    "date": "2026-09-14T05:12:49.739Z",
+    "pair": "XAU/USD",
+    "timeframe": "5M",
+    "timeframeKey": "5m",
+    "candleTime": "2026-09-14T05:10:00Z",
+    "direction": "SELL",
+    "score": 55,
+    "reasons": [
+      "هيكل هابط (Bias/BOS هابط)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 4328.641,
+    "sl": 4334.6851981944465,
+    "tp": 4316.552603611106,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1789362769739
+  },
+  {
     "fingerprint": "USD/TRY|1m|-1|2026-09-14T04:07:00Z|ICT",
     "date": "2026-09-14T04:09:35.669Z",
     "pair": "USD/TRY",
@@ -9919,85 +9999,5 @@
     "rr": 2,
     "source": "ICT",
     "createdAt": 1788754435031
-  },
-  {
-    "fingerprint": "BTC/USD|1m|-1|2026-09-07T03:56:00Z|ICT",
-    "date": "2026-09-07T03:56:56.069Z",
-    "pair": "BTC/USD",
-    "timeframe": "1M",
-    "timeframeKey": "1m",
-    "candleTime": "2026-09-07T03:56:00Z",
-    "direction": "SELL",
-    "score": 55,
-    "reasons": [
-      "هيكل هابط (Bias/BOS هابط)",
-      "السعر داخل منطقة OTE (61.8%-79%)"
-    ],
-    "entry": 79644.09,
-    "sl": 79660.92097192032,
-    "tp": 79565.1,
-    "rr": 4.6931336095098395,
-    "source": "ICT",
-    "createdAt": 1788753416069
-  },
-  {
-    "fingerprint": "GBP/USD|5m|-1|2026-09-07T03:45:00Z|ICT",
-    "date": "2026-09-07T03:45:26.103Z",
-    "pair": "GBP/USD",
-    "timeframe": "5M",
-    "timeframeKey": "5m",
-    "candleTime": "2026-09-07T03:45:00Z",
-    "direction": "SELL",
-    "score": 55,
-    "reasons": [
-      "هيكل هابط (Bias/BOS هابط)",
-      "السعر داخل منطقة OTE (61.8%-79%)"
-    ],
-    "entry": 1.350875,
-    "sl": 1.351182415585114,
-    "tp": 1.3502601688297722,
-    "rr": 2,
-    "source": "ICT",
-    "createdAt": 1788752726104
-  },
-  {
-    "fingerprint": "USD/JPY|15m|-1|2026-09-07T03:00:00Z|ICT",
-    "date": "2026-09-07T03:11:57.417Z",
-    "pair": "USD/JPY",
-    "timeframe": "15M",
-    "timeframeKey": "15m",
-    "candleTime": "2026-09-07T03:00:00Z",
-    "direction": "SELL",
-    "score": 55,
-    "reasons": [
-      "هيكل هابط (Bias/BOS هابط)",
-      "السعر داخل منطقة OTE (61.8%-79%)"
-    ],
-    "entry": 156.1605,
-    "sl": 156.32307708835228,
-    "tp": 155.83534582329548,
-    "rr": 2,
-    "source": "ICT",
-    "createdAt": 1788750717417
-  },
-  {
-    "fingerprint": "EUR/USD|1m|1|2026-09-07T03:11:00Z|ICT",
-    "date": "2026-09-07T03:11:57.224Z",
-    "pair": "EUR/USD",
-    "timeframe": "1M",
-    "timeframeKey": "1m",
-    "candleTime": "2026-09-07T03:11:00Z",
-    "direction": "BUY",
-    "score": 55,
-    "reasons": [
-      "هيكل صاعد (Bias/BOS صاعد)",
-      "السعر داخل منطقة OTE (61.8%-79%)"
-    ],
-    "entry": 1.16091,
-    "sl": 1.1608253426030042,
-    "tp": 1.161058,
-    "rr": 1.74822289902134,
-    "source": "ICT",
-    "createdAt": 1788750717224
   }
 ]
