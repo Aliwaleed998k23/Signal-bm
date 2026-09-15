@@ -1,5 +1,26 @@
 [
   {
+    "fingerprint": "USD/TRY|5m|1|2026-09-15T09:50:00Z|ICT",
+    "date": "2026-09-15T09:53:41.128Z",
+    "pair": "USD/TRY",
+    "timeframe": "5M",
+    "timeframeKey": "5m",
+    "candleTime": "2026-09-15T09:50:00Z",
+    "direction": "BUY",
+    "score": 80,
+    "reasons": [
+      "هيكل صاعد (Bias/BOS صاعد)",
+      "السعر داخل منطقة OTE (61.8%-79%)",
+      "السعر داخل Fair Value Gap صاعد غير ممتلئ"
+    ],
+    "entry": 48.63995,
+    "sl": 48.63989713348642,
+    "tp": 48.640055733027154,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1789466021128
+  },
+  {
     "fingerprint": "USD/TRY|1m|1|2026-09-15T09:37:00Z|ICT",
     "date": "2026-09-15T09:38:35.579Z",
     "pair": "USD/TRY",
@@ -9981,25 +10002,5 @@
     "rr": 8.168157498857335,
     "source": "ICT",
     "createdAt": 1788820018069
-  },
-  {
-    "fingerprint": "EUR/GBP|1m|1|2026-09-07T22:12:00Z|ICT",
-    "date": "2026-09-07T22:12:56.385Z",
-    "pair": "EUR/GBP",
-    "timeframe": "1M",
-    "timeframeKey": "1m",
-    "candleTime": "2026-09-07T22:12:00Z",
-    "direction": "BUY",
-    "score": 55,
-    "reasons": [
-      "هيكل صاعد (Bias/BOS صاعد)",
-      "السعر داخل منطقة OTE (61.8%-79%)"
-    ],
-    "entry": 0.85836,
-    "sl": 0.8583148583937426,
-    "tp": 0.8584502832125149,
-    "rr": 2,
-    "source": "ICT",
-    "createdAt": 1788819176385
   }
 ]
