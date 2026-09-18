@@ -1,5 +1,45 @@
 [
   {
+    "fingerprint": "BTC/USD|5m|1|2026-09-18T06:00:00Z|ICT",
+    "date": "2026-09-18T06:00:06.209Z",
+    "pair": "BTC/USD",
+    "timeframe": "5M",
+    "timeframeKey": "5m",
+    "candleTime": "2026-09-18T06:00:00Z",
+    "direction": "BUY",
+    "score": 55,
+    "reasons": [
+      "هيكل صاعد (Bias/BOS صاعد)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 77439.42,
+    "sl": 77267.83024834725,
+    "tp": 77782.5995033055,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1789711206209
+  },
+  {
+    "fingerprint": "GBP/USD|15m|1|2026-09-18T06:00:00Z|ICT",
+    "date": "2026-09-18T06:00:05.917Z",
+    "pair": "GBP/USD",
+    "timeframe": "15M",
+    "timeframeKey": "15m",
+    "candleTime": "2026-09-18T06:00:00Z",
+    "direction": "BUY",
+    "score": 55,
+    "reasons": [
+      "هيكل صاعد (Bias/BOS صاعد)",
+      "السعر داخل منطقة OTE (61.8%-79%)"
+    ],
+    "entry": 1.336395,
+    "sl": 1.3358426823910332,
+    "tp": 1.3374996352179336,
+    "rr": 2,
+    "source": "ICT",
+    "createdAt": 1789711205917
+  },
+  {
     "fingerprint": "BTC/USD|5m|1|2026-09-18T05:50:00Z|ICT",
     "date": "2026-09-18T05:50:29.835Z",
     "pair": "BTC/USD",
@@ -9966,45 +10006,5 @@
     "rr": 1.5296670183356453,
     "source": "ICT",
     "createdAt": 1789082323476
-  },
-  {
-    "fingerprint": "USD/JPY|15m|1|2026-09-10T23:00:00Z|ICT",
-    "date": "2026-09-10T23:04:26.306Z",
-    "pair": "USD/JPY",
-    "timeframe": "15M",
-    "timeframeKey": "15m",
-    "candleTime": "2026-09-10T23:00:00Z",
-    "direction": "BUY",
-    "score": 55,
-    "reasons": [
-      "هيكل صاعد (Bias/BOS صاعد)",
-      "السعر داخل منطقة OTE (61.8%-79%)"
-    ],
-    "entry": 154.4255,
-    "sl": 154.38793485546208,
-    "tp": 154.50063028907584,
-    "rr": 2,
-    "source": "ICT",
-    "createdAt": 1789081466306
-  },
-  {
-    "fingerprint": "USD/TRY|5m|1|2026-09-10T22:30:00Z|ICT",
-    "date": "2026-09-10T22:31:06.072Z",
-    "pair": "USD/TRY",
-    "timeframe": "5M",
-    "timeframeKey": "5m",
-    "candleTime": "2026-09-10T22:30:00Z",
-    "direction": "BUY",
-    "score": 55,
-    "reasons": [
-      "هيكل صاعد (Bias/BOS صاعد)",
-      "السعر داخل Fair Value Gap صاعد غير ممتلئ"
-    ],
-    "entry": 48.59503,
-    "sl": 48.58822485305546,
-    "tp": 48.60864029388909,
-    "rr": 2,
-    "source": "ICT",
-    "createdAt": 1789079466072
   }
 ]
